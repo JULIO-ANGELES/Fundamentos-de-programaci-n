@@ -7,17 +7,13 @@
 
 nombre = input("introduzca su nombre:")
 
-facebook = float(input("Ingrese el tiempo que dedica a Facebook (en horas): "))
-instagram = float(input("Ingrese el tiempo que dedica a Instagram (en horas): "))
-twitter = float(input("Ingrese el tiempo que dedica a Twitter (en horas): "))
-youtube = float(input("Ingrese el tiempo que dedica a YouTube (en horas): "))
-netflix = float(input("Ingrese el tiempo que dedica a Netflix (en horas): "))
-whatsapp = float(input("Ingrese el tiempo que dedica a WhatsApp (en horas): "))
+Redes_sociales = float(input("Ingrese el tiempo que dedica a redes sociales (en horas): "))
+streaming = float(input("Ingrese el tiempo que dedica a streaming (en horas): "))
+mensajeria = float(input("Ingrese el tiempo que dedica a Mensajería (en horas): "))
 videojuegos = float(input("Ingrese el tiempo que dedica a Videojuegos (en horas): "))
-estudio = float(input("Ingrese el tiempo que dedica a Estudio (en horas): "))
-llamasas_o_reuniones = float(input("Ingrese el tiempo que dedica a Llamadas o Reuniones (en horas): "))
 
-tiempo_total = facebook + instagram + twitter + youtube + estudio + netflix + whatsapp + videojuegos + llamasas_o_reuniones
+
+tiempo_total = Redes_sociales + streaming + mensajeria + videojuegos
 porcentaje_total = (tiempo_total / 24) * 100
 
 print("RESULTADOS:")
