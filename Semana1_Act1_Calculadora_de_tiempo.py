@@ -11,9 +11,10 @@ Redes_sociales = float(input("Ingrese el tiempo que dedica a redes sociales (en 
 streaming = float(input("Ingrese el tiempo que dedica a streaming (en horas): "))
 mensajeria = float(input("Ingrese el tiempo que dedica a Mensajería (en horas): "))
 videojuegos = float(input("Ingrese el tiempo que dedica a Videojuegos (en horas): "))
+estudio_en_linea = float(input("Ingrese el tiempo que dedica a Estudio en línea (en horas): "))
 
 
-tiempo_total = Redes_sociales + streaming + mensajeria + videojuegos
+tiempo_total = Redes_sociales + streaming + mensajeria + videojuegos + estudio_en_linea
 porcentaje_total = (tiempo_total / 24) * 100
 
 print("RESULTADOS:")
