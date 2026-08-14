@@ -1,4 +1,5 @@
 #JULIO CESAR ANGELES MENDOZA (IDS) CALCULADORA DE TIEMPO DIGITAL 
+
 #Desarrollar una **calculadora interactiva en Python** que permita registrar el
 #tiempo diario (en horas o fracciones de hora) que una persona dedica a distintas
 #plataformas digitales: redes sociales, mensajería, servicios de streaming,
