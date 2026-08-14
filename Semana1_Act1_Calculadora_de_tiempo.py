@@ -17,7 +17,7 @@ estudio_en_linea = float(input("Ingrese el tiempo que dedica a Estudio en línea
 tiempo_total = Redes_sociales + streaming + mensajeria + videojuegos + estudio_en_linea
 porcentaje_total = (tiempo_total / 24) * 100
 
-print("RESULTADOS:")
+print("----RESULTADOS----:")
 print(f"nombre: {nombre}")
 print(f"Tiempo total dedicado a plataformas digitales: {tiempo_total:.2f} horas")
 print(f"Porcentaje del día dedicado a plataformas digitales: {porcentaje_total:.2f}%")
