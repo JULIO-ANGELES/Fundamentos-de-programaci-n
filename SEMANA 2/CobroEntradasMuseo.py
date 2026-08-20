@@ -33,9 +33,11 @@ while contador <= cantidad_visitantes:
         precio = 0
         print("Menor de 3 años, sin cargo")
         print("Precio del boleto: $0.00")
-
+        print("Descuento: $0.00")
+        print("Total a pagar: $0.00")
+        
         contador += 1
-        continue
+        continue 
     elif edad <= 17:
         precio = PRECIO_MENOR
     else:
@@ -52,9 +54,9 @@ while contador <= cantidad_visitantes:
     if tipo == 1:
         descuento = precio * DESCUENTO_ADULTO_MAYOR
     elif tipo == 2:
-        descuento = precio * DESCUENTO_ESTUDIANTE
+        descuento = precio * DESCUENTO_PROFESOR
     elif tipo == 3:
-        descuento = precio *DESCUENTO_PROFESOR
+        descuento = precio *DESCUENTO_ESTUDIANTE
     else:
          descuento = 0
     precio_final = precio - descuento
@@ -66,8 +68,6 @@ while contador <= cantidad_visitantes:
     total += precio_final
     contador += 1
 
-    if contador > cantidad_visitantes:
-         break
 
-print("\nTotal de todos los visitantes:")
-print(f" ${total:.2f}")
+print("\n Cuenta final:")
+print(f"Total a pagar: ${total:.2f}")
