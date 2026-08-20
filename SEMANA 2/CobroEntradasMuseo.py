@@ -10,6 +10,17 @@ DESCUENTO_ADULTO_MAYOR = 0.12
 DESCUENTO_PROFESOR = 0.10
 DESCUENTO_ESTUDIANTE = 0.10
 
+print("---------- PRECIOS DE ENTRADA ----------")
+print("Menores de 3 años  $0")
+print("De 3 a 17 años      $30")
+print("18 años o más      $45")
+
+print("\n---------- DESCUENTOS ----------")
+print("Adulto mayor         12%")
+print("Profesor            10%")
+print("Estudiante           10%")
+
+
 cantidad_visitantes =int(input("Ingresa la cantidad de visitantes:"))
 contador = 1
 total = 0
