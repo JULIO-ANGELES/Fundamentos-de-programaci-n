@@ -1,6 +1,5 @@
 # Nombre: Julio Cesar Angeles Mendoza (IDS)
-# Matrícula: 07313141
-# Fecha: 20/08/2026
+# Matrícula: 07313141 Fecha: 20/08/2026
 # Actividad evaluable 2: Cobro de entradas del museo
 
 #constantes
