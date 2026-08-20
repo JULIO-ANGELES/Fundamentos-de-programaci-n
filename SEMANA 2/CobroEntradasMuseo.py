@@ -41,9 +41,9 @@ while contador <= cantidad_visitantes:
     if tipo == 1:
         descuento = precio * DESCUENTO_ADULTO_MAYOR
     elif tipo == 2:
-        descuento = precio * DESCUENTO_PROFESOR
-    elif tipo == 3:
         descuento = precio * DESCUENTO_ESTUDIANTE
+    elif tipo == 3:
+        descuento = precio *DESCUENTO_PROFESOR
     else:
          descuento = 0
     precio_final = precio - descuento
