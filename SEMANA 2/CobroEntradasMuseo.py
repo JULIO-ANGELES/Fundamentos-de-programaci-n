@@ -15,9 +15,9 @@ print("De 3 a 17 años      $30")
 print("18 años o más      $45")
 
 print("\nDESCUENTOS: ")
-print("Adulto mayor         12%")
-print("Profesor            10%")
-print("Estudiante           10%")
+print("Adulto mayor      12%")
+print("Profesor         10%")
+print("Estudiante        10%")
 
 cantidad_visitantes =int(input("Ingresa la cantidad de visitantes:"))
 contador = 1
