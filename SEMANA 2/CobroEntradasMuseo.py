@@ -2,7 +2,6 @@
 # Matrícula: 07313141 Fecha: 20/08/2026
 # Actividad evaluable 2: Cobro de entradas del museo
 
-#constantes
 PRECIO_MENOR = 30
 PRECIO_ADULTO = 45
 
@@ -10,16 +9,15 @@ DESCUENTO_ADULTO_MAYOR = 0.12
 DESCUENTO_PROFESOR = 0.10
 DESCUENTO_ESTUDIANTE = 0.10
 
-print("---------- PRECIOS DE ENTRADA ----------")
+print("PRECIOS DE ENTRADA:  ")
 print("Menores de 3 años  $0")
 print("De 3 a 17 años      $30")
 print("18 años o más      $45")
 
-print("\n---------- DESCUENTOS ----------")
+print("\nDESCUENTOS: ")
 print("Adulto mayor         12%")
 print("Profesor            10%")
 print("Estudiante           10%")
-
 
 cantidad_visitantes =int(input("Ingresa la cantidad de visitantes:"))
 contador = 1
@@ -56,7 +54,7 @@ while contador <= cantidad_visitantes:
     elif tipo == 2:
         descuento = precio * DESCUENTO_PROFESOR
     elif tipo == 3:
-        descuento = precio *DESCUENTO_ESTUDIANTE
+        descuento = precio * DESCUENTO_ESTUDIANTE
     else:
          descuento = 0
     precio_final = precio - descuento
