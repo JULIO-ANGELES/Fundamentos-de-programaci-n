@@ -14,7 +14,6 @@ while capacidad_maxima <= 0:
     capacidad_maxima = int(input("Ingrese nuevamente la capacidad: "))
 
 horario = input("Ingrese el horario a analizar: ")
-
 usuarios_presentes = int(input("Ingrese la cantidad de usuarios presentes: "))
 
 # aqui se validan los datos ingresados
@@ -24,7 +23,6 @@ while usuarios_presentes < 0 or usuarios_presentes > capacidad_maxima:
 
 #aqui se procesan los datos de capacidad del gym
 espacios_disponibles = capacidad_maxima - usuarios_presentes
-
 porcentaje_ocupacion = (usuarios_presentes / capacidad_maxima) * 100
 
 # Aqui se clasifica la ocupacion del gym
@@ -39,7 +37,7 @@ elif porcentaje_ocupacion <= 90:
 
 else:
     nivel_ocupacion = "CRITICA"
-    
+
 # Aqui se muestran los resultados despues de todo lo anteriormente procesado
 
 print("------------- RESULTADO -------------")
