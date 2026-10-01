@@ -8,3 +8,9 @@ Fecha: 25/09/2026 | Usuario: Diego Hernandez
 Fecha: 25/09/2026 | Usuario: Fernanda Castillo
 Fecha: 25/09/2026 | Usuario: Jorge Ramirez
 Fecha: 25/09/2026 | Usuario: Valeria Soto
+Fecha: 30/09/2026 | Usuario: Ana Torres
+Fecha: 30/09/2026 | Usuario: Pedro Ramirez
+Fecha: 30/09/2026 | Usuario: Cristiano Ronaldo
+Fecha: 30/09/2026 | Usuario: Lionel Messi
+Fecha: 30/09/2026 | Usuario: Kylian Mbappe
+Fecha: 01/10/2026 | Usuario: Raul Mendoza
