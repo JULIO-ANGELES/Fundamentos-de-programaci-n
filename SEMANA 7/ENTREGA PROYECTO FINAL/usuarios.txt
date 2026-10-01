@@ -14,3 +14,4 @@ Fecha: 30/09/2026 | Usuario: Cristiano Ronaldo
 Fecha: 30/09/2026 | Usuario: Lionel Messi
 Fecha: 30/09/2026 | Usuario: Kylian Mbappe
 Fecha: 01/10/2026 | Usuario: Raul Mendoza
+Fecha: 01/10/2026 | Usuario: Gerard Martin

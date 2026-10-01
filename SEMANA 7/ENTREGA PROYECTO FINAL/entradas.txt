@@ -14,3 +14,4 @@ Fecha: 30/09/2026 | Entrada: Cristiano Ronaldo
 Fecha: 30/09/2026 | Entrada: Kylian Mbappe
 Fecha: 01/10/2026 | Entrada: Raul Mendoza
 Fecha: 01/10/2026 | Entrada: Lionel Messi
+Fecha: 01/10/2026 | Entrada: Gerard Martin

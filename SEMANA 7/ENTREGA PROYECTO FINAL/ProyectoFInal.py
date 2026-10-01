@@ -16,12 +16,6 @@ from datetime import datetime, date
 # COMPATIBILIDAD WINDOWS / LINUX / MAC
 # =========================================================
 
-if os.name == "nt":
-    import msvcrt
-else:
-    import select
-    import termios
-    import tty
 
 
 # =========================================================
@@ -240,6 +234,8 @@ def mostrar_menu():
 
 def inactividad_windows():
 
+    import msvcrt
+
     print(
         "Selecciona una opción: ",
         end="",
@@ -251,15 +247,8 @@ def inactividad_windows():
 
     while True:
 
-        if (
-            time.time() - ultima_actividad
-            >= TIEMPO_INACTIVIDAD
-        ):
-
-            print(
-                "\nHan transcurrido 10 minutos sin actividad."
-            )
-
+        if time.time() - ultima_actividad >= TIEMPO_INACTIVIDAD:
+            print("\nHan transcurrido 10 minutos sin actividad.")
             return None
 
         if msvcrt.kbhit():
@@ -267,29 +256,18 @@ def inactividad_windows():
             tecla = msvcrt.getwch()
             ultima_actividad = time.time()
 
-            # ENTER
             if tecla == "\r":
-
                 print()
-
                 return opcion.strip()
 
-            # BACKSPACE
             if tecla == "\b":
 
                 if opcion:
-
                     opcion = opcion[:-1]
-
-                    print(
-                        "\b \b",
-                        end="",
-                        flush=True
-                    )
+                    print("\b \b", end="", flush=True)
 
                 continue
 
-            # TECLAS ESPECIALES
             if tecla in ("\x00", "\xe0"):
 
                 if msvcrt.kbhit():
@@ -298,14 +276,10 @@ def inactividad_windows():
                 continue
 
             opcion += tecla
-
-            print(
-                tecla,
-                end="",
-                flush=True
-            )
+            print(tecla, end="", flush=True)
 
         time.sleep(0.05)
+    
 
 
 # =========================================================
@@ -313,6 +287,9 @@ def inactividad_windows():
 # =========================================================
 
 def inactividad_unix():
+    import select
+    import termios
+    import tty
 
     print(
         "Selecciona una opción: ",
@@ -323,15 +300,11 @@ def inactividad_unix():
     opcion = ""
 
     descriptor = sys.stdin.fileno()
-
-    configuracion_original = termios.tcgetattr(
-        descriptor
-    )
+    configuracion_original = termios.tcgetattr(descriptor)
 
     try:
 
         tty.setcbreak(descriptor)
-
         ultima_actividad = time.time()
 
         while True:
@@ -342,11 +315,7 @@ def inactividad_unix():
             )
 
             if restante <= 0:
-
-                print(
-                    "\nHan transcurrido 10 minutos sin actividad."
-                )
-
+                print("\nHan transcurrido 10 minutos sin actividad.")
                 return None
 
             disponibles, _, _ = select.select(
@@ -360,32 +329,20 @@ def inactividad_unix():
                 continue
 
             tecla = sys.stdin.read(1)
-
             ultima_actividad = time.time()
 
-            # ENTER
             if tecla in ("\n", "\r"):
-
                 print()
-
                 return opcion.strip()
 
-            # BACKSPACE
             if tecla in ("\x7f", "\b"):
 
                 if opcion:
-
                     opcion = opcion[:-1]
-
-                    print(
-                        "\b \b",
-                        end="",
-                        flush=True
-                    )
+                    print("\b \b", end="", flush=True)
 
                 continue
 
-            # TECLAS ESPECIALES
             if tecla == "\x1b":
 
                 while select.select(
@@ -400,12 +357,7 @@ def inactividad_unix():
                 continue
 
             opcion += tecla
-
-            print(
-                tecla,
-                end="",
-                flush=True
-            )
+            print(tecla, end="", flush=True)
 
     finally:
 
@@ -414,6 +366,7 @@ def inactividad_unix():
             termios.TCSADRAIN,
             configuracion_original
         )
+        
 
 
 def controlar_inactividad():

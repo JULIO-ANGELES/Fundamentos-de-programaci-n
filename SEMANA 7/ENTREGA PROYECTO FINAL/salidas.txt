@@ -9,3 +9,4 @@ Fecha: 30/09/2026 | Salida: Cristiano Ronaldo
 Fecha: 30/09/2026 | Salida: Kylian Mbappe
 Fecha: 01/10/2026 | Salida: Raul Mendoza
 Fecha: 01/10/2026 | Salida: Lionel Messi
+Fecha: 01/10/2026 | Salida: Gerard Martin
